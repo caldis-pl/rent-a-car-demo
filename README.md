@@ -5,7 +5,7 @@
 </h2>
 
 <p>
-  Jak dodąć kalendarz rezerwacji na własnej stronie internetowej? To proste - załóż konto w a href="https://caldis.pl">systemie rezerwacji caldis.pl</a>, a następnie przeprowadź integrację samodzielnie, lub z pomocą naszego zespołu lub osoby która tworzyła Twoją stronę www.
+  Jak dodąć kalendarz rezerwacji na własnej stronie internetowej? To proste - załóż konto w <a href="https://caldis.pl">systemie rezerwacji caldis.pl</a>, a następnie przeprowadź integrację samodzielnie, lub z pomocą naszego zespołu lub osoby która tworzyła Twoją stronę internetową.
 </p>
 
 <p>
