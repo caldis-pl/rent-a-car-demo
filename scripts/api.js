@@ -1,17 +1,10 @@
 var caldisApi = (function () {
-    var caldisUrlElement = document.querySelector(`meta[name="caldis-api-url"]`);
-    var caldisApiKeyElement = document.querySelector(`meta[name="caldis-api-key"]`);
+    const rootUrl =  "https://caldis.pl/api/v1";
+    const apiKey =  "";
 
-    if(!caldisUrlElement){
-        console.warn("caldis-api-url is missing")
-    }
-
-    if(!caldisApiKeyElement){
+    if(!apiKey){
         console.warn("caldis-api-key is missing")
     }
-
-    const rootUrl =  caldisUrlElement.getAttribute("value");
-    const apiKey = caldisApiKeyElement.getAttribute("value");
 
     const commonOptions = {
         method: "POST",
