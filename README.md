@@ -55,7 +55,7 @@
 </p>
 
 <p>
-  A generując z tej strony kod API, możesz umożliwić swoim klientom dokonywanie rezerwacji online bezpośrednio z Twojej strony www! Szybka integracja dla Ciebie, prosta rezerwacja dla klienta. Co więcej, możesz skorzystać z dostępnej w ramach programu dla wypożyczalni 
+  Dzięki integracji z API, możesz umożliwić swoim klientom dokonywanie rezerwacji online bezpośrednio z Twojej strony www! Szybka integracja dla Ciebie, prosta rezerwacja dla klienta. Co więcej, możesz skorzystać z dostępnej w ramach programu dla wypożyczalni 
   samochodów możliwości pobierania opłat od klientów, tworząc kompatybilne konto w znanym i bezpiecznym serwisie płatności Przelewy 24. 
 </p>
 
