@@ -22,7 +22,7 @@
 </p>
 
 <p>
-  W caldis.pl możesz::
+  W caldis.pl możesz:
 </p>
 
 <ul>
