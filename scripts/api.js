@@ -40,6 +40,10 @@ var caldisApi = (function () {
             const url = `${rootUrl}/FlexReservation/Get`;
             return fetchWithCommonOptions(url, data);
         },
+        getCalendarsFiltered: async (data) => {
+            const url = `${rootUrl}/FlexReservation/GetFiltered`;
+            return fetchWithCommonOptions(url, data);
+        },
         isCalendarAvailable: async (data) => {
             const url = `${rootUrl}/FlexReservation/IsCalendarAvailable`;
             return fetchWithCommonOptions(url, data);
@@ -47,7 +51,10 @@ var caldisApi = (function () {
         addReservation:  async (data) => {
             const url = `${rootUrl}/FlexReservation/Add`;
             return fetchWithCommonOptions(url, data);
-        }
-
+        },
+        getCategories: async () => {
+            const url = `${rootUrl}/Categories/GetAll`;
+            return fetchWithCommonOptions(url, data);
+        }      
     };
 })();
