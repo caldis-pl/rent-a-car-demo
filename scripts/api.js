@@ -52,9 +52,17 @@ var caldisApi = (function () {
             const url = `${rootUrl}/FlexReservation/Add`;
             return fetchWithCommonOptions(url, data);
         },
-        getCategories: async () => {
-            const url = `${rootUrl}/Categories/GetAll`;
-            return fetchWithCommonOptions(url, data);
-        }      
+        categories: {
+            getAll: async () => {
+                const url = `${rootUrl}/Categories/GetAll`;
+                return fetchWithCommonOptions(url, data);
+            }      
+        },
+        calendars: {
+            get: async (data) => {
+                const url = `${rootUrl}/Calendars/Get`;
+                return fetchWithCommonOptions(url, data);
+            }      
+        }
     };
 })();
