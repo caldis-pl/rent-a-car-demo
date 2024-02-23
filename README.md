@@ -206,7 +206,23 @@ caldisApi.addReservation(json).then((response) => {
 
 ```js
 var json = form.formToJson();
-caldisApi.getCategories().then((response) => {
+caldisApi.categories.getAll().then((response) => {
+    console.log(response);
+})
+.catch((reason) => {
+    console.log(reason)
+})
+```
+
+<h3>
+  Pobranie szczegółów kalendarza
+</h3>
+
+```js
+var json =  {
+    Id: "00000000-0000-0000-0000-000000000000"
+};
+caldisApi.calendars.get(json).then((response) => {
     console.log(response);
 })
 .catch((reason) => {
