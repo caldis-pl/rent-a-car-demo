@@ -96,7 +96,7 @@
 </p>
 
 <h3>
-  Pobieranie rezerwacji
+  Pobieranie dostępnych kalendarzy (samochodów)
 </h3>
 
 ```js
@@ -137,6 +137,35 @@ caldisApi.getCalendar(json)
 ```
 
 <h3>
+  Pobieranie dostępnych kelendarzy (samododów) z możliwością filtrowania
+</h3>
+
+```js
+var filters = {
+    DateFrom: new Date("2024-01-01 15:00"),
+    DateTo: new Date("2024-01-04 15:00"),
+    Filters: [
+        {
+           Name: "IdPricing",
+           Value: "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          Name:  "IdCategory",
+          Value: "00000000-0000-0000-0000-000000000000"
+        }
+    ]
+};
+
+caldisApi.getCalendars(filters)
+    .then((calendars) => {
+        console.log(calendars)
+    })
+    .catch((reason) => {
+        console.log(reason)
+    })
+```
+
+<h3>
   Sprawdzanie dostępności kalendarza
 </h3>
 
@@ -164,6 +193,20 @@ caldisApi.isCalendarAvailable(json)
 ```js
 var json = form.formToJson();
 caldisApi.addReservation(json).then((response) => {
+    console.log(response);
+})
+.catch((reason) => {
+    console.log(reason)
+})
+```
+
+<h3>
+  Pobranie dostępnych kategorii
+</h3>
+
+```js
+var json = form.formToJson();
+caldisApi.getCategories().then((response) => {
     console.log(response);
 })
 .catch((reason) => {
